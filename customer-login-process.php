@@ -10,8 +10,8 @@
 			$cpassword=$_POST['cpassword'];  	
 			$query="SELECT customer_id,cemail, cpassword FROM customer_tb
 			WHERE cemail= '$cemail'
-			AND cpassword= '$cpassword' ";
-	
+			AND cpassword= '".$cpassword."' 
+			";
 			
 			$result= mysqli_query($con, $query);
 			if($result)
@@ -19,19 +19,21 @@
 				if(mysqli_num_rows($result)==1){
 						$row=mysqli_fetch_assoc($result);
 					
-							session_regenerate_id();
+							//session_regenerate_id();
 							$_SESSION['session_comid']=$row['customer_id'];
 							$_SESSION['session_email']=$row['cemail'];
 							$_SESSION['session_password']=$row['cpassword'];
 						//session_write_close();		
-						//header('Location: customer-home-view.php');	
+						header('Location: customer-home-view.php');	
 						//exit();
-						echo 'success';
 					}else
 					{
-						//header('Location: customer-registration-view.php');
+						header('Location: customer-registration-view.php');
 						echo " Email is invalid.";
 					}
+			}
+			else{
+				echo 'noresult'. $cemail;
 			}
 		}
 		else

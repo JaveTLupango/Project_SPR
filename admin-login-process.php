@@ -9,7 +9,7 @@ if(isset($_POST['email']))
 	    $password=$_POST['password'];  	
 		$query="SELECT admin_id,email, password FROM admin_tb
 		WHERE email= '$email'
-		-- AND password= '$password'
+		 AND password= '".$password."'
 		";
 		
 	$result= mysqli_query($con, $query);
