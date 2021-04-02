@@ -93,15 +93,15 @@
 					
 					<h1>Add Company and Image Logo :</h1>		 				
 						<form enctype="multipart/form-data" method="post" action="admin-addlogo-process.php">
-							<table>
+							<table class="table">
 								<tr>
 								<td>Website Name:</td>
-								<td><input type="text" name="webname" placeholder="Enter Website Name"></td>
+								<td><input type="text" class="form-control" name="webname" placeholder="Enter Website Name"></td>
 								<td></td>
 								</tr>
 								<tr>
 								<td>Website Description:</td>
-								<td><input type="text" name="webdesc" placeholder="Enter Website Description"></td>
+								<td><input type="text" class="form-control" name="webdesc" placeholder="Enter Website Description"></td>
 								<td></td>
 								</tr>
 								<tr>
@@ -109,13 +109,13 @@
 										Product Image:
 									</td>
 											<td>
-													<input type="file" name="image"/>
+													<input class="form-control" type="file" name="image"/>
 											</td>	
 								</tr>
 								<tr>
 									<td></td>
 									<td></td>
-									<td><input type="submit" value="Submit"name="submit"></td>	
+									<td><input type="submit" class="form-control" value="Submit"name="submit"></td>	
 								</tr>
 						</table>
 					

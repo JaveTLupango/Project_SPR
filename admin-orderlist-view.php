@@ -125,7 +125,7 @@
 			?>
 
 <div align="center">
-<table width="80%">
+<table width="80%" class="table">
 <tr>
 	<td>Cart No.</td>
 	<td>ProductNo</td>

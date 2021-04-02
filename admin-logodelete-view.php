@@ -66,7 +66,7 @@
 			$result = mysqli_query($con,$query);		
 			?>
 			<div align="center">
-<table width="80%">
+<table width="80%" class="table">
 <tr>
 	<td>Image</td>
 	<td>Website Name</td>
