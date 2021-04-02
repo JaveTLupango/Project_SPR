@@ -92,7 +92,7 @@
                         </div>
                         <h3 class="text-center mb-0">Admin Login</h3>
                         <p class="text-center" style="color: black;">Sign in by entering the information below</p>
-                        <form action="admin-login-process.php" class="login-form">
+                        <form action="admin-login-process.php" method="POST" class="login-form">
                             <div class="form-group">
                                   <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
                                   <input type="email" class="form-control" name="email" placeholder="Email" required>
