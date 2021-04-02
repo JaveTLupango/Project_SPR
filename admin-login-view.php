@@ -88,10 +88,10 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap py-5">
                         <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/bg.jpg);">
-                          <img  src="data:image/jpeg;base64,<?php echo base64_encode($image)  ?>" style="max-width: 120px;"/>
+                          <img  src="data:image/jpeg;base64,<?php echo base64_encode($image)  ?>" style="max-width: 200px;"/>
                         </div>
                         <h3 class="text-center mb-0">Admin Login</h3>
-                        <p class="text-center">Sign in by entering the information below</p>
+                        <p class="text-center" style="color: black;">Sign in by entering the information below</p>
                         <form action="admin-login-process.php" class="login-form">
                             <div class="form-group">
                                   <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
@@ -111,7 +111,7 @@
                             </div>
                         </form>
                         <div class="w-100 text-center mt-4 text">
-                        <p class="mb-0">Don't have an account?</p>
+                        <p class="mb-0" style="color: black;">Don't have an account?</p>
                         <a href="admin-registration-view.php">Sign Up</a>
                         </div>
                   </div>

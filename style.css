@@ -8144,7 +8144,7 @@
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    color: #b689b0; }
+    color: #67225b; }
     a:hover, a:focus {
       text-decoration: none !important;
       outline: none !important;
@@ -8192,7 +8192,7 @@
     .login-wrap h3 {
       font-weight: 400;
       font-size: 18px;
-      color: #f00;
+      color: #662359;
       text-transform: uppercase;
       letter-spacing: 1px; }
     .login-wrap p {
@@ -8216,12 +8216,12 @@
       background: transparent;
       font-size: 18px; }
       .form-group .icon span {
-        color: #f00; }
+        color: #631e55; }
   
   .form-control {
     height: 48px;
     background: rgba(0, 0, 0, 0.05);
-    color: rgb(252 0 0 / 80%) !important;
+    color: rgb(104 34 91) !important;
     font-size: 14px;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -8327,7 +8327,7 @@
     .btn:hover, .btn:active, .btn:focus {
       outline: none; }
     .btn.btn-primary {
-      background: #b689b0 !important;
+      background: #67225b !important;
       border: 1px solid #b689b0 !important;
       color: #fff !important; }
       .btn.btn-primary:hover {
