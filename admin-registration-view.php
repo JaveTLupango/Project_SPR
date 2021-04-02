@@ -102,12 +102,14 @@
 <link rel="stylesheet" href="style.css">
 <?php include('logo-title.php');?>
 </head>
-<body>
+<body style="background-image: url(bg1.jpg); height: 100%; background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
     <section class="ftco-section">
         <div class="container">
       
             <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-12 col-lg-12">
                     <div class="login-wrap py-5">
                         <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/bg.jpg);">
                           <img  src="data:image/jpeg;base64,<?php echo base64_encode($image)  ?>" style="max-width: 200px;"/>
@@ -115,14 +117,19 @@
                         <h3 class="text-center mb-0">Admin Registration</h3>
                         <p class="text-center">Sign Up by entering the information below</p>
                         <form action="admin-registration-process.php" class="login-form">
-                            	  <div class="form-group">
+							<div class="rows">
+								<div class="form-group col-lg-5">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
                                   	<input type="text" class="form-control" name="firstname" placeholder="First Name" required>
-                                  </div>
-								  <div class="form-group">
+                                </div>
+							</div>
+							<div class="rows">
+								<div class="form-group col-lg-5">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
                                   	<input type="text" class="form-control" name="middlename" placeholder="Middle Name" required>
-                                  </div>
+                                </div>
+							</div>
+								  
 								  <div class="form-group">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
                                   	<input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
