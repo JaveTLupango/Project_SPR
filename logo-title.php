@@ -10,5 +10,5 @@
 			$image = $rows['image'];
 			
 //echo '<img  src="data:image/jpeg;base64,'.base64_encode($image) .'"/>';
-echo '<link rel="icon" type="image" href="data:image/jpeg;base64,'.base64_encode($image) .'"/>';
+//echo '<link rel="icon" type="image" href="data:image/jpeg;base64,'.base64_encode($image) .'"/>';
 			?>
