@@ -123,40 +123,40 @@
                         <form action="customer-registration-process.php" method="POST" class="login-form">
                             	  <div class="form-group">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                  	<input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+                                  	<input type="text" class="form-control" name="cfirstname" placeholder="First Name" required>
                                   </div>
 								  <div class="form-group">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                  	<input type="text" class="form-control" name="middlename" placeholder="Middle Name" required>
+                                  	<input type="text" class="form-control" name="cmiddlename" placeholder="Middle Name" required>
                                   </div>
 								  <div class="form-group">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                  	<input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+                                  	<input type="text" class="form-control" name="clastname" placeholder="Last Name" required>
                                   </div>
 								  <div class="form-group">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                  	<input type="text" class="form-control" name="gender" placeholder="Gender" required>
+                                  	<input type="text" class="form-control" name="cgender" placeholder="Gender" required>
+                                  </div>
+								  <div class="form-group">
+								  	  <H3> BirthDate </H3>
+									  <div class="form-group">
+										Day:<input type="number" min="1" max="31" step="1" value="1" class="form-control" name="cbirthday" placeholder="BirthDate" required>
+										Month:<input type="number"  min="1" max="12" step="1" value="1"  class="form-control" name="cbirthmonth" placeholder="BirthDate" required>
+										Year:<input type="number" min="1900" max="2099" step="1" value="2021" class="form-control" name="cbirthyear" placeholder="BirthDate" required>
+									  </div>                                  	
                                   </div>
 								  <div class="form-group">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                  	<input type="date" class="form-control" name="birthday" placeholder="BirthDate" required>
+                                  	<input type="text" class="form-control" name="cmobilenumber" placeholder="mobilenumber" required>
                                   </div>
 								  <div class="form-group">
                                   	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                  	<input type="text" class="form-control" name="email" placeholder="Email" required>
-                                  </div>
-								  <div class="form-group">
-                                  	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                  	<input type="text" class="form-control" name="mobilenumber" placeholder="mobilenumber" required>
-                                  </div>
-								  <div class="form-group">
-                                  	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-user"></span></div>
-                                  	<input type="email" class="form-control" name="email" placeholder="Email" required>
+                                  	<input type="email" class="form-control" name="cemail" placeholder="Email" required>
                                   </div>
 								  
                                   <div class="form-group">
                                   <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-lock"></span></div>
-                                  <input type="password" name="password" class="form-control" placeholder="Password" required>
+                                  <input type="password" name="cpassword" class="form-control" placeholder="Password" required>
                                   </div>
                                   <!-- <div class="form-group d-md-flex">
                                     <div class="w-100 text-md-right">
