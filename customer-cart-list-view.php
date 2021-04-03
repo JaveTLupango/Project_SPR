@@ -111,7 +111,7 @@ if(empty($rows)){
 	<th><strong><?php echo '₱'.$price.'.00'; ?></strong></th>
 	<th><strong><?php echo ($itemno); ?></strong></th>
 
-<form method='post' enctype='multipart/form-data' action='customer-order-process.php'>
+<form method='POST' enctype='multipart/form-data' action='customer-order-process.php'>
 <?php //ayaw ni hilabti ?>
 	<input type='hidden' name='product_id' value='<?php echo $product_id; ?>'/>
 	<input type='hidden' name='productname' value='<?php echo $productname; ?>'/>
@@ -124,10 +124,10 @@ if(empty($rows)){
 	<th><input type='text' name='address' placeholder='<?php echo $address; ?>'/></th>
 	<th><input type='text' name='contactno' placeholder="Please input contact number" /></th>
 		<th>
-		<input class="form-control btn btn-primary" type='submit' value='Order Now' name='submit'>		
+		<input class="form-control btn btn-primary" type='submit' value='Order Now' name='submit'>				</form>
 		<a href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button class="form-control btn btn-primary" >Delete to Cart</button></a>
 		<a href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button class="form-control btn btn-primary">Order Recieved</button></a></th>
-		</form>
+
 		
 		</tr>
 <?php }} ?>

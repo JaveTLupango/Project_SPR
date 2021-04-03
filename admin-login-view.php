@@ -85,11 +85,11 @@
   background-size: cover;">
     <section class="ftco-section">
         <div class="container">      
-            <div class="row justify-content-center">
+            <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap py-5">
                         <div class="img d-flex align-items-center justify-content-center">
-                          <img  src="data:image/jpeg;base64,<?php echo base64_encode($image)  ?>" style="max-width: 200px;"/>
+                          <img  src="<?php echo ($image)  ?>" style="max-width: 200px;"/>
                         </div>
                         <h3 class="text-center mb-0">Admin Login</h3>
                         <p class="text-center" style="color: black;">Sign in by entering the information below</p>
