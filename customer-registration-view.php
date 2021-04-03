@@ -95,7 +95,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Admin Login</title>
+<title>Customer Registration</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
@@ -109,13 +109,16 @@
     <section class="ftco-section">
         <div class="container">
       
-            <div class="row justify-content-center">
+            <div class="row">
+				
+				<div class="col-md-6 col-lg-8">
+				</div>
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap py-5">
                         <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/bg.jpg);">
-                          <img  src="data:image/jpeg;base64,<?php echo base64_encode($image)  ?>" style="max-width: 200px;"/>
+                          <img  src="<?php echo($image)  ?>" style="max-width: 200px;"/>
                         </div>
-                        <h3 class="text-center mb-0">Admin Registration</h3>
+                        <h3 class="text-center mb-0">Registration</h3>
                         <p class="text-center">Sign Up by entering the information below</p>
                         <form action="customer-registration-process.php" method="POST" class="login-form">
                             	  <div class="form-group">
@@ -165,8 +168,8 @@
                             </div>
                         </form>
                         <div class="w-100 text-center mt-4 text">
-                        <p class="mb-0">Don't have an account?</p>
-                        <a href="admin-registration-view.php">Sign Up</a>
+                        <p class="mb-0">Do you have account?</p>
+                        <a href="customer-login-view.php">Sign In</a>
                         </div>
                   </div>
                 </div>

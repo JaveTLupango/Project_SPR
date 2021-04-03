@@ -61,11 +61,13 @@
   background-size: cover;">
     <section class="ftco-section">
         <div class="container">      
-            <div class="row justify-content-center">
+            <div class="row">
+              <div class="col-md-6 col-lg-8">
+              </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap py-5">
                         <div class="img d-flex align-items-center justify-content-center">
-                          <img  src="data:image/jpeg;base64,<?php echo base64_encode($image)  ?>" style="max-width: 200px;"/>
+                          <img  src="<?php echo($image)  ?>" style="max-width: 200px;"/>
                         </div>
                         <h3 class="text-center mb-0">Customer Login</h3>
                         <p class="text-center" style="color: black;">Sign in by entering the information below</p>
@@ -89,7 +91,7 @@
                         </form>
                         <div class="w-100 text-center mt-4 text">
                         <p class="mb-0" style="color: black;">Don't have an account?</p>
-                        <a href="admin-registration-view.php">Sign Up</a>
+                        <a href="customer-registration-view.php">Sign Up</a>
                         </div>
                   </div>
                 </div>
