@@ -105,13 +105,15 @@
 <link rel="stylesheet" href="style.css">
 <?php include('logo-title.php');?>
 </head>
-<body style="background-image: url(bg1.jpg); height: 100%; background-position: center;
+<body style="background-image: url(bg2021.jpg); height: 100%; background-position: center;
   background-repeat: no-repeat;
   background-size: cover;">
     <section class="ftco-section">
         <div class="container">
       
-            <div class="row justify-content-center">
+            <div class="row">
+				<div class="col-md-6 col-lg-8">                
+                </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap py-5">
                         <div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/bg.jpg);">
