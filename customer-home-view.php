@@ -89,7 +89,7 @@ $query = "SELECT * FROM product_tb WHERE cmail='$email_owner'";
 ?>
 
 	<tr>
-	<th><strong><img  src="data:image/jpeg;base64,<?php echo base64_encode($pimage);?>" style="margin-top:20px;height:100px;width:100px;"/></strong></th>
+	<th><strong><img  src="<?php echo ($pimage);?>" style="margin-top:20px;height:100px;width:100px;"/></strong></th>
 	
 	<th><strong><?php echo ($product_id); ?></strong></th>
 	<th><strong><?php echo ($productname); ?></strong></th>

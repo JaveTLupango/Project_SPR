@@ -16,8 +16,8 @@
 
 	if($result_insert==true)
 		{
-			include('customer-cart-list-view.php');
-		
+			//include('customer-cart-list-view.php');			
+			header("Location:customer-cart-list-view.php");		
 		}
 	else
 		{

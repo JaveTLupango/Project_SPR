@@ -32,8 +32,7 @@
 
 			$image = $rows['image'];
 			$webname = $rows['webname'];
-			?>	
-
+			?>
 
  <!-- Static navbar -->
       <nav class="navbar navbar-default" style="background-color: #b2b2b2;">

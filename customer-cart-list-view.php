@@ -65,16 +65,16 @@ $query = "SELECT * FROM cart_tb
 
 
 		?>
-<table width="80%">
+<table width="50%" class="table">
 <tr>
-	<td>CartNo</td>
-	<td>ProductNo</td>
-	<td>ProductName</td>
-	<td>Product Description</td>
+	<td>CNo</td>
+	<td>PNo</td>
+	<td>Product Name & Description</td>
 	<td>Price</td>
-	<td>Quantity</td>
+	<td>QTY</td>
 	<td> <CENTER>Address</CENTER></td>
-	<td colspan="3">contact number:</td>
+	<td>contact number:</td>
+	<td>Option</td>
 
 </tr>
 		<?php
@@ -87,7 +87,6 @@ $query = "SELECT * FROM cart_tb
 			$productdesc = $rows['cproductdesc'];
 			$price = $rows['cprice'];
 			$itemno = $rows['itemno'];
-
 			$firstname=$record['cfirstname'];
 			$lastname=$record['clastname'];
 			$address=$record['caddress'];
@@ -106,8 +105,9 @@ if(empty($rows)){
 	<tr>	
 	<th><strong><?php echo ($cart_no); ?></strong></th>
 	<th><strong><?php echo ($product_id); ?></strong></th>
-	<th><strong><?php echo ($productname); ?></strong></th>
-	<th><strong><?php echo ($productdesc); ?></strong></th>
+	<th>
+	<strong>Name:</strong> <?php echo ($productname); ?>
+	<strong>Description:</strong> <?php echo ($productdesc); ?></th>
 	<th><strong><?php echo '₱'.$price.'.00'; ?></strong></th>
 	<th><strong><?php echo ($itemno); ?></strong></th>
 
@@ -123,10 +123,11 @@ if(empty($rows)){
 	<input type='hidden' name='lastname' value='<?php echo $lastname; ?>'/>
 	<th><input type='text' name='address' placeholder='<?php echo $address; ?>'/></th>
 	<th><input type='text' name='contactno' placeholder="Please input contact number" /></th>
-		<th><input type='submit' value='Order Now' name='submit'>
-		</form> </th>
-		<th><a style='margin-left:20px;' href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button>Delete to Cart</button></a></th>
-		<th><a style='margin-left:20px;' href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button>Order Recieved</button></a></th>
+		<th>
+		<input class="form-control btn btn-primary" type='submit' value='Order Now' name='submit'>		
+		<a href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button class="form-control btn btn-primary" >Delete to Cart</button></a>
+		<a href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button class="form-control btn btn-primary">Order Recieved</button></a></th>
+		</form>
 		
 		</tr>
 <?php }} ?>

@@ -32,7 +32,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-			<img  src="data:image/jpeg;base64,<?php echo base64_encode($image);?>" style="height:50px;width:50px;"/>
+			<img  src="<?php echo ($image);?>" style="height:50px;width:50px;"/>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">

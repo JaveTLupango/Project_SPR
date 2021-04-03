@@ -85,7 +85,7 @@ if(empty($rows&&$record)){
 <div>
 
 
-<table width="80%">
+<table width="80%" class="table">
 <tr>
 	<td>Image</td>
 	<td>ProductNo</td>
@@ -115,16 +115,15 @@ if(empty($rows&&$record)){
 	<input type='hidden' name='email' value='<?php echo $email_owner; ?>'/>
   
   <?php //kani pwede ni hilabti ?>
-  <select name="itemno">
+  <select name="itemno" class="form-control">
   	<?php 
   	for($i=1;$i<100;$i++)
   		{?>
     <option><?php echo $i;?></option>
     <?php }?>
   </select>
-
-
-<input type='submit' value='Add to Cart' name='submit'  style='width:250px;'>
+  <br/>
+  <input type='submit' value='Add to Cart' name='submit'  style='width:250px;' class="form-control">
 		</form> 
 
 </th>
