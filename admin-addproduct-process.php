@@ -6,7 +6,7 @@ if(isset($_POST['submit']))
 		
 		$productname		= $_POST['productname'];
 		$productdesc		= $_POST['productdesc'];
-		$price 				= $_POST['price'];
+		$price 				= str_replace('₱','', $_POST['price']); //str_replace("world","Peter","Hello world!");
 		$quantity 			= $_POST['quantity'];
 		$file= $_FILES['image']['name'];
 
