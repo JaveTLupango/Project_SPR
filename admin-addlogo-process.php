@@ -16,8 +16,7 @@ $result= mysqli_query($con,$query);
 	if ($result) {
 		move_uploaded_file($_FILES['image']['tmp_name'], "$file");
 		echo "Image Product Uploaded!";
-		header('location:admin-addlogo-view.php');
-		
+		header('location:admin-addlogo-view.php');		
 	}
 	else
 	{

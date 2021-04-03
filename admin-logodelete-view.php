@@ -84,7 +84,7 @@
 ?>
 
 <tr>
-	<th><strong><img  src="data:image/jpeg;base64,<?php echo base64_encode($image);?>" style="margin-top:20px;height:100px;width:100px;"/></strong></th>
+	<th><strong><img  src="<?php echo ($image)?>" style="margin-top:20px;height:100px;width:100px;"/></strong></th>
 	
 	<th><strong><?php echo ($webname); ?></strong></th>
 	<th><strong><?php echo ($webdesc); ?></strong></th>

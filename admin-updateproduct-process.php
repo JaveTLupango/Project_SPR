@@ -6,7 +6,7 @@ include("connect_db.php");
 			
 			$productname = $_POST['productname'];
 			$productdesc = $_POST['productdesc'];
-			$price = $_POST['price'];
+			$price = str_replace('₱','', $_POST['price']);
 			$quantity = $_POST['quantity'];
 
 			$product_id = $_POST['product_id'];
