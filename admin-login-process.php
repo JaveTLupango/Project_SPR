@@ -21,6 +21,9 @@ if(isset($_POST['email']))
 					$_SESSION['session_comid']=$row['admin_id'];
 					$_SESSION['session_email']=$email;
 					$_SESSION['session_password']=$email;
+
+					$_SESSION['session_type']= "admin";
+					
 				//session_write_close();		
 				header('Location: admin-home-view.php');	
 				//exit();

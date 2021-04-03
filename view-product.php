@@ -1,20 +1,4 @@
 <?php require_once("authin.php"); ?>
-<!-- <html>
-	<head>
-<?php //include('logo-title.php');?>
-		</head>
-			<title>title</title>
-				<body>
-
-<div>
-	<?php //include('admin-nav-bar-view.php'); ?>
-</div>
-
-	</body>
-</html> -->
-
-
-
 
 <!doctype html>
 <html lang="en">
@@ -53,7 +37,19 @@
 
     <div class="container">
 
-     <?php include 'admin-nav-bar-view.php'; ?>
+     <?php
+        //include 'admin-nav-bar-view.php'; 
+
+	 	if ($_SESSION['session_type']== "admin")
+		 {			
+			include 'admin-nav-bar-view.php'; 
+		 }
+		 else
+		 {
+			include 'customer-nav-bar-view.php';
+		 }
+
+	  ?>
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
@@ -109,7 +105,21 @@ else { ?>
 		<th><strong> Product Quantity</strong> : <input type="text" class="form-control col-lg-12" value=" <?php echo ($quantity); ?>" disabled></th>
 	</tr>
 	<tr>
-	<th><a style='margin-left:20px;' href='admin-product-view.php'><button class='btn btn-info'>Back to Product List</button></a></th>
+	<th>
+		<?php 
+		if ($_SESSION['session_type']== "admin")
+		{			
+		   //include 'admin-nav-bar-view.php'; 
+		   echo "<a style='margin-left:20px;' href='admin-product-view.php'><button class='btn btn-info'>Back to Product List</button></a>";
+		}
+		else
+		{
+		   //include 'customer-nav-bar-view.php';		
+		   echo "<a style='margin-left:20px;' href='customer-home-view.php'><button class='btn btn-info'>Back to Product List</button></a>";
+		}
+		?>
+	<!-- <a style='margin-left:20px;' href='admin-product-view.php'><button class='btn btn-info'>Back to Product List</button></a> -->
+	</th>
 	</tr>
 		</table>
 	</th>

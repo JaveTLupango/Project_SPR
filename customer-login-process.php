@@ -22,7 +22,8 @@
 							//session_regenerate_id();
 							$_SESSION['session_comid']=$row['customer_id'];
 							$_SESSION['session_email']=$row['cemail'];
-							$_SESSION['session_password']=$row['cpassword'];
+							$_SESSION['session_password']=$row['cpassword'];							
+							$_SESSION['session_type']= "customer";
 						//session_write_close();		
 						header('Location: customer-home-view.php');	
 						//exit();

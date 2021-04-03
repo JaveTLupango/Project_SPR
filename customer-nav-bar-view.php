@@ -11,8 +11,8 @@
 			$image = $rows['image'];
 			$webname = $rows['webname'];
 
-			require_once("authin-customer.php"); ?>
-			<?php
+			//require_once("authin-customer.php");
+
 				include('connect_db.php');
 				
 				$email_owner=$_SESSION['session_email'];
