@@ -54,6 +54,17 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
 			<h1>Homepage</h1>
+      <br/>
+      <style>
+        video {
+          width: 100%;
+          height: auto;
+        }
+        </style>
+      <video width="400" controls>
+        <source src="v1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
       </div>
     </div> <!-- /container -->
 
