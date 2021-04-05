@@ -126,9 +126,7 @@ if(empty($rows)){
 		<th>
 		<input class="form-control btn btn-primary" type='submit' value='Order Now' name='submit'>				</form>
 		<a href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button class="form-control btn btn-primary" >Delete to Cart</button></a>
-		<a href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button class="form-control btn btn-primary">Order Recieved</button></a></th>
-
-		
+		<a href='customer-deleteorder-process.php?cart_no=<?php echo $cart_no;?>'><button class="form-control btn btn-primary">Order Recieved</button></a></th>		
 		</tr>
 <?php }} ?>
 

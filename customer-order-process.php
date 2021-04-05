@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+
  include("connect_db.php");
 
 		$firstname 	= $_POST['firstname'];
@@ -15,15 +18,15 @@
 
 	
 	$query="SELECT * FROM customer_tb
-				WHERE cemail='$email'";
-		$result= mysqli_query($con,$query);
-		$row=mysqli_fetch_row($result);
+		 WHERE cemail='$email'";
+		$result1= mysqli_query($con,$query);
+		$row = mysqli_fetch_assoc($result1);  //mysqli_fetch_row($result);  //mysqli_fetch_assoc
 
-	if(!empty($row) && count($row)>0)
-		{
-			echo"Error transaction!</br>";			
-			echo "<a href='customer-cart-list-view.php'>Click here </a>to go back";
-		}	
+	if(empty($row) && count($row)==0)
+	{
+		echo"Error transaction!</br>";
+		echo "<a href='customer-cart-list-view.php'>Click here </a>to go back";
+	}
 	else
 		{
 			$insert="INSERT INTO order_tb (product_no,productname,productdesc,price,itemno,email,firstname,lastname,address,contactno)
